@@ -1,7 +1,7 @@
 import { Routes } from "@angular/router";
 import { Home } from "./home/home";
+import { GranPremi } from "./gran-premi/gran-premi";
 import { GranPremio } from "./gran-premio/gran-premio";
-import { ElencoGranPremio } from "./elenco-gran-premio/elenco-gran-premio";
  
 export const routes: Routes = [
     {
@@ -10,13 +10,13 @@ export const routes: Routes = [
         title: 'Home page'
     },
     {
-        path: '',
-        component: GranPremio,
+        path: 'gran-premi/:id',
+        component: GranPremi,
         title: 'Dettagli del gran premio'
     },
     {
-        path: '',
-        component: ElencoGranPremio,
+        path: 'gran-premi',
+        component: GranPremio,
         title: 'Elenco del gran premio'
     }
 ]
