@@ -1,0 +1,136 @@
+/* style.css */
+
+/* --- Stile Footer --- */
+.f1-footer {
+    margin-top: 600px;
+    background-color: #0a0a0a; /* Leggermente più scuro per staccare */
+    color: #a0a0a0;
+    padding-top: 40px;
+    border-top: 3px solid #e10600; /* Bordo rosso coordinato */
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Sezione Partner --- */
+.footer-partners {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #282828;
+}
+
+.footer-partners h4 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.partner-logo {
+    color: #a0a0a0;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    transition: transform 0.2s ease-in-out;;
+
+}
+
+.partner-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
+/* --- Sezione Principale (colonne) --- */
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Per la responsività su schermi piccoli */
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px; /* Larghezza minima per colonna */
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Linea rossa sotto i titoli */
+.footer-col h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #e10600;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: #e10600;
+    padding-left: 5px; /* Sposta leggermente il testo a destra */
+}
+
+/* --- Icone Social --- */
+.social-links a {
+    display: inline-block;
+    color: #a0a0a0;
+    font-size: 1.6rem;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e10600;
+    transform: scale(1.1);
+}
+
+/* --- Barra inferiore --- */
+.footer-bottom {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+    border-top: 1px solid #282828;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+}
